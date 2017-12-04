@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Melody Hub
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main">
+<ion-card class="background">
+  <ion-card class="music" (swipe)="presentActionSheet()">
+
+    <img src="assets/imgs/21.jpg"/>
+  </ion-card>
+  <ion-card class="list">
+    <ion-card-content>
+
+          <ion-list>
+            <ion-item *ngFor="let item of items">
+              {{ item }}
+            </ion-item>
+              <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/9.jpg">
+              </ion-thumbnail>
+              <h2>Give me everything</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/8.jpg">
+              </ion-thumbnail>
+              <h2>Sorry</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/7.jpg">
+              </ion-thumbnail>
+              <h2>Sia-cheap thrills</h2>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+                <img src="assets/imgs/10.jpg">
+              </ion-thumbnail>
+              <h2>Waka Waka</h2>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+    <button ion-button  full color="danger" (click)="getpage()">Go to the video</button>
+    <ion-card>
+      <ion-item>
+        <ion-label floating> Name</ion-label>
+        <ion-input type="text" [(ngModel)]="u"></ion-input>
+      </ion-item>
+      <button ion-button color="danger" (click)="modalv()" >Welcome</button>
+    </ion-card>
+  </ion-card>
+
+</ion-card>
+</ion-content>

@@ -1,0 +1,35 @@
+page-home {
+  .main{
+    background-color: grey;
+  }
+.music {
+  width:24.2em;
+  height:17em;
+}
+  .list{
+    background: url("../assets/imgs/21.png");
+    background-repeat: no-repeat;
+      width:24.2em;
+      //height:17em;
+  }
+  .background{
+    background: transparent;
+    width: 356px;
+    height: 850px;
+  }
+  .scroll-content{
+    justify-content: center;
+    display:flex;
+    //flex-direction: column;
+  }
+  .search{
+    width:300px;
+  }
+  h2{
+    color:white;
+  }
+  .item{
+    background: transparent;
+  }
+
+}
